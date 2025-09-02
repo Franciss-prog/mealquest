@@ -1,0 +1,55 @@
+
+{
+	"meals": [
+		{
+			"id": "52772",
+			"name": "Teriyaki Chicken Casserole",
+			"image": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+			"category": "Chicken",
+			"area": "Japanese",
+			"tags": ["Casserole", "Chicken"],
+			"instructions": "Preheat oven to 350°F (175°C). Cook chicken and vegetables, mix with teriyaki sauce and rice, bake until heated through.",
+			"youtube": "https://www.youtube.com/watch?v=4aZr5hZXP_s",
+			"ingredients": [
+				{"ingredient": "Chicken", "measure": "500g"},
+				{"ingredient": "Teriyaki Sauce", "measure": "1 cup"},
+				{"ingredient": "Mixed Vegetables", "measure": "2 cups"},
+				{"ingredient": "Rice", "measure": "2 cups cooked"}
+			]
+		},
+		{
+			"id": "52874",
+			"name": "Beef and Mustard Pie",
+			"image": "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg",
+			"category": "Beef",
+			"area": "British",
+			"tags": ["Pie", "Comfort Food"],
+			"instructions": "Brown beef, simmer with onions and stock, add mustard, encase in pastry, bake until golden.",
+			"youtube": "https://www.youtube.com/watch?v=1IszT_guI08",
+			"ingredients": [
+				{"ingredient": "Beef", "measure": "500g"},
+				{"ingredient": "Onion", "measure": "1"},
+				{"ingredient": "Beef Stock", "measure": "2 cups"},
+				{"ingredient": "Mustard", "measure": "2 tbsp"},
+				{"ingredient": "Shortcrust Pastry", "measure": "500g"}
+			]
+		},
+		{
+			"id": "52977",
+			"name": "Corba",
+			"image": "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg",
+			"category": "Soup",
+			"area": "Turkish",
+			"tags": ["Soup"],
+			"instructions": "Cook lentils with spices and vegetables until tender, blend to a smooth soup.",
+			"youtube": "https://www.youtube.com/watch?v=VVnZd8A84z4",
+			"ingredients": [
+				{"ingredient": "Lentils", "measure": "1 cup"},
+				{"ingredient": "Carrot", "measure": "1"},
+				{"ingredient": "Onion", "measure": "1"},
+				{"ingredient": "Cumin", "measure": "1 tsp"}
+			]
+		}
+	]
+}
+
