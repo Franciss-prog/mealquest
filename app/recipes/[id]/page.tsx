@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 type MealDetail = {
@@ -27,6 +26,7 @@ async function getMeal(id: string): Promise<MealDetail | null> {
   const data = await res.json();
   const meal = Array.isArray(data?.meals) ? data.meals[0] : null;
   if (!meal) return null;
+
   const ingredients: { ingredient: string; measure: string }[] = [];
   for (let i = 1; i <= 20; i++) {
     const ing = meal[`strIngredient${i}`];
@@ -38,12 +38,14 @@ async function getMeal(id: string): Promise<MealDetail | null> {
       });
     }
   }
+
   const tags = meal.strTags
     ? String(meal.strTags)
         .split(",")
         .map((t: string) => t.trim())
         .filter(Boolean)
     : [];
+
   return {
     id: String(meal.idMeal),
     name: String(meal.strMeal),
@@ -57,12 +59,18 @@ async function getMeal(id: string): Promise<MealDetail | null> {
   };
 }
 
+// ✅ Fix: define a dedicated props type
+type RecipeDetailPageProps = {
+  params: {
+    id: string;
+  };
+};
+
 export default async function RecipeDetailPage({
   params,
-}: {
-  params: { id: string };
-}) {
+}: RecipeDetailPageProps) {
   const meal = await getMeal(params.id);
+
   if (!meal) {
     return (
       <div className="mx-auto w-full max-w-4xl p-4 sm:p-6">
